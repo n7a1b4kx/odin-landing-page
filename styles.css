@@ -11,6 +11,7 @@ header, footer, .links, .hero-container, .info-container {
 header, .hero-container {
     align-items: center;
 }
+
 header {
     justify-content: space-around;
 }
@@ -28,28 +29,48 @@ header, footer, .hero-container {
     color: #f9faf8;
 }
 
+.logo {
+    font-size: 24px;
+}
+
 .links, .text-section p {
     color: #e5e7eb;
+    font-size: 18px;
+}
+
+.image-section img {
+    height: auto;
+    width: 500px;
+}
+
+.text-section p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.text-section h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 0;
 }
 
 .sign-up-button {
     background-color: #3882f6;
+    padding: 8px 24px;
+    border-radius: 12px;
+    border-width: 0;
 }
 
-.info-container .info .border {
-    height: 50px;
-    width 50px;
-    outline: 2px solid black;
-    justify-content: center;
-    gap: 16px;
-}
+
 
 .hero-container {
     justify-content: center;
     gap: 16px;
+    padding-top: 32px;
+    padding-bottom: 60px;
 }
-.hero-container .text-section {
-    max-width: 400px;
+
+.hero-container .text-section, .hero-container .image-section {
+    max-width: 500px;
 }
 
 footer {
