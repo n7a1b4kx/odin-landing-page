@@ -4,7 +4,7 @@ body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header, footer, .links, .hero-container, .info-container {
+header, footer, .links, .hero-container, .info-container, .container {
     display: flex;
 }
 
@@ -13,6 +13,8 @@ header, .hero-container {
 }
 
 header {
+    padding-top: 8px;
+    padding-bottom: 8px;
     justify-content: space-around;
 }
 
@@ -27,6 +29,11 @@ header, footer, .hero-container {
 
 .logo, .text-section h1, .sign-up-button, footer p {
     color: #f9faf8;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
 }
 
 .logo {
@@ -47,6 +54,7 @@ header, footer, .hero-container {
     margin-top: 8px;
     margin-bottom: 8px;
 }
+
 .text-section h1 {
     font-size: 48px;
     font-weight: 900;
@@ -56,17 +64,15 @@ header, footer, .hero-container {
 .sign-up-button {
     background-color: #3882f6;
     padding: 8px 24px;
-    border-radius: 12px;
+    border-radius: 8px;
     border-width: 0;
 }
-
-
 
 .hero-container {
     justify-content: center;
     gap: 16px;
-    padding-top: 32px;
-    padding-bottom: 60px;
+    padding-top: 48px;
+    padding-bottom: 72px;
 }
 
 .hero-container .text-section, .hero-container .image-section {
@@ -77,4 +83,43 @@ footer {
     padding-top: 32px;
     padding-bottom: 32px;
     justify-content: center;
+}
+.container {
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.info .border {
+    align-items: center;
+    border: 2px solid black;
+    height: 50px;
+    width: auto;
+}
+
+.quote-container {
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    padding: 48px 72px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote p {
+    align-self: flex-start;
+}
+
+.quote h3 {
+    align-self: flex-end;
 }
