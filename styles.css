@@ -4,7 +4,7 @@ body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header, footer, .links, .hero-container, .info-container, .container {
+header, footer, .links, .hero-container, .info-container, .container, .sign-up-container {
     display: flex;
 }
 
@@ -99,8 +99,11 @@ footer {
 .info .border {
     align-items: center;
     border: 2px solid black;
-    height: 50px;
-    width: auto;
+    padding: 24px;
+    max-width: 64px;
+    height: auto;
+    border-radius: 8px;
+
 }
 
 .quote-container {
@@ -122,4 +125,17 @@ footer {
 
 .quote h3 {
     align-self: flex-end;
+}
+
+.sign-up-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-container .text {
+    align-self: flex-baselin;
+}
+
+.sign-up-container .sign-up-button {
+    align-self: first baseline;
 }
