@@ -10,5 +10,74 @@
     padding: 0;
 }
 
-/* style header footer */
+/* assign the flex property here */
 
+header,
+footer,
+.hero-section,
+.box-section,
+.info,
+.box-container,
+.list {
+    display: flex;
+}
+
+/* style header */
+
+header {
+    padding-top: 16px;
+    justify-content: space-around;
+}
+
+/* style the list */
+
+.list {
+    list-style: none;
+    gap: 16px;
+}
+
+/* hero section */
+
+.hero-section {
+    gap: 16px;
+    padding: 64px 192px;
+    align-items: center;
+}
+
+.image-section img {
+    height: auto;
+    width: 432px;
+}
+
+/* style box section */
+
+.box-section, .box-container {
+    flex-direction: column;
+}
+
+.box-section h2, footer {
+    text-align: center;
+}
+
+    /* design box */
+
+.info {
+    gap: 16px;
+    padding: 16px 192px;
+}
+
+.box-container .box {
+    height: 144px;
+    width: 144px;
+    border: 2px solid black;
+    background-color: burlywood;
+}
+
+.box-container {
+    gap: 8px;
+    align-items: center;
+}
+
+footer {
+    justify-content: center;
+}
