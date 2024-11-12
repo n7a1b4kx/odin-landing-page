@@ -1,0 +1,14 @@
+/* box model box sizing merging content and box space */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* removing margin and padding of all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* style header footer */
+
