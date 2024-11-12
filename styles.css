@@ -16,15 +16,15 @@ body {
     font-family: "Roboto", monospace;
 }
 
-.logo, .text-section h1 {
+.logo, .text-section h1, .text h3 {
     color: #f9faf8;
 }
 
-.logo {
+.logo, .text h3 {
     font-size: 24px;
 }
 
-.links, .text-section p, .hero-section button, footer {
+.links, .text-section p, .sign-up-button, .text p, footer {
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -66,11 +66,15 @@ footer,
 .box-container,
 .text-section,
 .quote,
+.sign-up-container,
 .list {
     display: flex;
 }
 
-.box-section, .box-container, .text-section, .quote {
+.box-section,
+.box-container,
+.text-section,
+.quote {
     flex-direction: column;
 }
 
@@ -117,7 +121,7 @@ footer {
     width: 432px;
 }
 
-.text-section button {
+.sign-up-button {
     height: 40px;
     width: 128px;
     font-weight: 700;
@@ -173,4 +177,19 @@ footer {
 
 .quote h3 {
     align-self: flex-end;
+}
+
+/* style sign up */
+
+.sign-up-container {
+    background-color: #3882f6;
+    margin: 96px 128px;
+    padding: 48px 64px;
+    border-radius: 8px;
+    justify-content: space-around;
+}
+
+.sign-up-container .sign-up-button {
+    justify-content: center;
+    border: 2px solid white;
 }
