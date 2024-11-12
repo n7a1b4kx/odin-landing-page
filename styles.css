@@ -10,16 +10,60 @@
     padding: 0;
 }
 
+/* font style */
+
+body {
+    font-family: "Roboto", monospace;
+}
+
+.logo, .text-section h1 {
+    color: #f9faf8;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.links, .text-section p, .hero-section button {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.text-section h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
 /* assign the flex property here */
 
 header,
 footer,
 .hero-section,
 .box-section,
+.box-section h2,
 .info,
 .box-container,
+.text-section,
 .list {
     display: flex;
+}
+
+.box-section, .box-container, .text-section {
+    flex-direction: column;
+}
+
+.text-section {
+    gap: 8px;
+}
+
+/* background colors */
+
+header, .hero-section, footer {
+    background-color: #1f2937;
 }
 
 /* style header */
@@ -40,7 +84,8 @@ header {
 
 .hero-section {
     gap: 16px;
-    padding: 64px 192px;
+    justify-content: center;
+    padding: 64px 192px 80px;
     align-items: center;
 }
 
@@ -49,21 +94,33 @@ header {
     width: 432px;
 }
 
-/* style box section */
-
-.box-section, .box-container {
-    flex-direction: column;
+.text-section button {
+    height: 40px;
+    width: 128px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    background-color: #3882f6;
 }
 
-.box-section h2, footer {
-    text-align: center;
+/* style box section */
+
+.box-section {
+    margin-bottom: 48px;
+}
+
+.box-section h2 {
+    justify-content: center;
+    margin-top: 48px;
 }
 
     /* design box */
 
 .info {
     gap: 16px;
-    padding: 16px 192px;
+    padding: 48px 192px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box-container .box {
@@ -73,8 +130,13 @@ header {
     background-color: burlywood;
 }
 
+.box-container .text {
+    text-align: center;
+}
+
 .box-container {
     gap: 8px;
+    max-width: 200px;
     align-items: center;
 }
 
